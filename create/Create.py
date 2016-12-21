@@ -50,13 +50,36 @@ def countKeyWords(dataRow, wordsLabel):
     return count / keyLen
 
 
+def test(dataRow):
+    result = []
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'动画.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'动作.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'冒险.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'喜剧.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'悬疑.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'战争.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'武侠.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'爱情.txt'))
+    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'科幻.txt'))
+    return '\t'.join(map(lambda x: str(x), result))
+
+
 if __name__ == '__main__':
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'动画.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'动作.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'冒险.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'喜剧.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'悬疑.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'战争.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'武侠.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'爱情.txt')
-    print countKeyWords(dataRow=da.str1, wordsLabel=u'科幻.txt')
+    print test(dataRow=da.str1)
+    print test(dataRow=da.str2)
+    print test(dataRow=da.str3)
+    print test(dataRow=da.str4)
+    print test(dataRow=da.str5)
+    print test(dataRow=da.str6)
+    print test(dataRow=da.str7)
+    print test(dataRow=da.str8)
+    print test(dataRow=da.str9)
+    print test(dataRow=da.str10)
+    print test(dataRow=da.str11)
+    print test(dataRow=da.str12)
+    print test(dataRow=da.str13)
+    print test(dataRow=da.str14)
+    print test(dataRow=da.str15)
+    print test(dataRow=da.str16)
+    print test(dataRow=da.str17)
+    print test(dataRow=da.str18)
