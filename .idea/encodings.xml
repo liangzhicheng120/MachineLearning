@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/util/bayes/keyword/冒险.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/冒险.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/剧情.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/动作.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/动画.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/喜剧.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/恐怖.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/武侠.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/bayes/source/爱情.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/knn/source/冒险.txt" charset="GBK" />
+  </component>
+</project>
