@@ -51,17 +51,22 @@ def countKeyWords(dataRow, wordsLabel):
 
 
 def test(dataRow):
-    result = []
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'动画.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'动作.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'冒险.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'喜剧.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'悬疑.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'战争.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'武侠.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'爱情.txt'))
-    result.append(countKeyWords(dataRow=dataRow, wordsLabel=u'科幻.txt'))
-    return '\t'.join(map(lambda x: str(x), result))
+    result = {}
+    tagFileName = []
+    result[u'动画'] = countKeyWords(dataRow=dataRow, wordsLabel=u'动画.txt')
+    result[u'动作'] = countKeyWords(dataRow=dataRow, wordsLabel=u'动作.txt')
+    result[u'冒险'] = countKeyWords(dataRow=dataRow, wordsLabel=u'冒险.txt')
+    result[u'喜剧'] = countKeyWords(dataRow=dataRow, wordsLabel=u'喜剧.txt')
+    result[u'悬疑'] = countKeyWords(dataRow=dataRow, wordsLabel=u'悬疑.txt')
+    result[u'战争'] = countKeyWords(dataRow=dataRow, wordsLabel=u'战争.txt')
+    result[u'武侠'] = countKeyWords(dataRow=dataRow, wordsLabel=u'武侠.txt')
+    result[u'爱情'] = countKeyWords(dataRow=dataRow, wordsLabel=u'爱情.txt')
+    result[u'科幻'] = countKeyWords(dataRow=dataRow, wordsLabel=u'科幻.txt')
+    result = sorted(result.iteritems(), key=lambda d: d[1], reverse=True)
+    for line in list(result):
+        if line[1] != 0:
+            tagFileName.append(line[0])
+    return '/'.join(tagFileName[:3])
 
 
 if __name__ == '__main__':
