@@ -18,7 +18,6 @@ fp.close();
 
 for eachline in alllines:
     line = eachline.strip().split(' ')
-    print line
     wd[line[0]] = float(line[1])
 print wd
 
